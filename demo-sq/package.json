@@ -1,0 +1,33 @@
+{
+  "name": "demo-sq",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node_modules/.bin/jest --verbose"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "jest-sonar-reporter": "^2.0.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "testMatch": [
+      "**/tests/*.test.(js|jsx|ts|tsx)"
+    ],
+    "testURL": "http://localhost/",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/*.js"
+    ],
+    "testResultsProcessor": "jest-sonar-reporter"
+  },
+  "jestSonar": {
+    "reportPath": "coverage"
+  }
+}

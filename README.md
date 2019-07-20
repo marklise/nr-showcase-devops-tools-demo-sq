@@ -1,1 +1,54 @@
-# nr-showcase-devops-tools-demo-sq
+# Natural Resources Common Services Showcase DevOps Tools Demo SQ
+
+This repository can be used to demonstrate the [nr-showcase-devops-tools](https://github.com/bcgov/nr-showcase-devops-tools.git) pipeline.  The pipeline is Jenkins/SonarQube that implements a Pull Request pipeline; and this repository contains very simple examples of the files required by an application repository to be built/deployed in that pipeline.
+
+These files are specifically for this particular pipeline and setup.  The Jenkinsfiles contain references to secrets and locations that are created when building the nr-showcase-devops-tools.
+
+| Name | Description |
+| --- | --- |
+| [Jenkinsfile](Jenkinsfile) | this is the master branch build pipeline |
+| [Jenkinsfile.cicd](Jenkinsfile.cicd) | this is the Pull Request build pipeline |
+| [sonar-project.properties](sonar-project.properties) | this is will configure your SonarQube scans |
+
+## Directory Structure
+
+    .github/                   - PR and Issue templates
+    demo-sq/                   - Simple Node code to demonstrate Code Coverage for SonarQube
+    CODE-OF-CONDUCT.md         - Code of Conduct
+    CONTRIBUTING.md            - Contributing Guidelines
+    Jenkinsfile                - Top-level Pipeline
+    Jenkinsfile.cicd           - Pull-Request Pipeline
+    LICENSE                    - License
+    sonar-project.properties   - SonarQube configuration
+
+## Documentation
+
+* [DevOps Tools Readme](https://github.com/bcgov/nr-showcase-devops-tools/blob/master/tools/README.md)
+* [Showcase Team Roadmap](https://github.com/bcgov/nr-get-token/wiki/Product-Roadmap)
+
+
+## Getting Help or Reporting an Issue
+
+To report bugs/issues/features requests, please file an [issue](https://github.com/bcgov/nr-showcase-devops-tools-demo-sq/issues).
+
+## How to Contribute
+
+If you would like to contribute, please see our [contributing](CONTRIBUTING.md) guidelines.
+
+Please note that this project is released with a [Contributor Code of Conduct](CODE-OF-CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+## License
+
+    Copyright 2019 Province of British Columbia
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
